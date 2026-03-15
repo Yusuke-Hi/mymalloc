@@ -1,7 +1,7 @@
-#include "memory_header.hpp"
-
 #ifndef MYMALLOC_HEADER
 #define MYMALLOC_HEADER
+
+#include "memory_header.hpp"
 
 // TODO: parameters.hなどに宣言
 extern bool first_call;

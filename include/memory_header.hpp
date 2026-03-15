@@ -1,7 +1,7 @@
-#include <cstddef>
-
 #ifndef MEMORY_HEADER_HEADER
 #define MEMORY_HEADER_HEADER
+
+#include <cstddef>
 
 struct MemoryHeader {
   size_t size;
