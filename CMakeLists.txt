@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(mymalloc CXX)
+project(my-memory-allocator CXX)
 
 add_library(${PROJECT_NAME} 
   src/mymalloc.cpp
