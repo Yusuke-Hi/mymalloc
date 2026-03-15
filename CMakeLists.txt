@@ -3,6 +3,7 @@ project(mymalloc CXX)
 
 add_library(${PROJECT_NAME} 
   src/mymalloc.cpp
+  src/memory_header.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)

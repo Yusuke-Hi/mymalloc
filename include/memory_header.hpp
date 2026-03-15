@@ -9,4 +9,7 @@ struct MemoryHeader {
   MemoryHeader* next;
 };
 
+void SetMemoryHeader(MemoryHeader* memory_header, size_t size, bool is_free,
+                     MemoryHeader* next);
+
 #endif  // MEMORY_HEADER_HEADER
