@@ -3,7 +3,8 @@ project(my-memory-allocator CXX)
 
 add_library(${PROJECT_NAME} 
   src/mymalloc.cpp
-  src/memory_header.cpp
+  src/myfree.cpp
+  src/memory-header.cpp
 )
 
 target_include_directories(${PROJECT_NAME} PUBLIC include)
