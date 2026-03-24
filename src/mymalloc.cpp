@@ -29,8 +29,6 @@ void* mymalloc(size_t arg_size) {
   MemoryHeader* current_header = free_list;
   const size_t kCurrentBlockSize = sizeof(MemoryHeader) + arg_size;
   while (current_header) {
-    printf("size: %zu, is_free: %d, kCurrentBlockSize: %zu\n",
-           current_header->size, current_header->is_free, kCurrentBlockSize);
     if (current_header->is_free && current_header->size >= kCurrentBlockSize) {
       // split current block
       void* payload = static_cast<void*>(current_header + 1);
