@@ -12,6 +12,4 @@ struct MemoryHeader {
 void SetMemoryHeader(MemoryHeader* memory_header, size_t size, bool is_free,
                      MemoryHeader* next);
 
-MemoryHeader* GetMemoryHeader(void* payload);
-
 #endif  // MEMORY_HEADER_HEADER

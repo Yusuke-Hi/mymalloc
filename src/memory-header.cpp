@@ -6,8 +6,3 @@ void SetMemoryHeader(MemoryHeader* memory_header, size_t size, bool is_free,
   memory_header->is_free = is_free;
   memory_header->next = next;
 }
-
-MemoryHeader* GetMemoryHeader(void* payload) {
-  return reinterpret_cast<MemoryHeader*>(static_cast<char*>(payload) -
-                                         sizeof(MemoryHeader));
-}
